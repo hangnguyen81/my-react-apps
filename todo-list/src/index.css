@@ -1,0 +1,34 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1rem;
+}
+
+.todo-list{
+    max-width: 500px;
+    width: 100%;
+    margin: 1em auto;
+    padding: 0 3em;
+    border: 1px solid rgb(155, 156, 155);
+    box-shadow: 5px 5px rgb(190, 190, 190), 10px 10px rgb(238, 237, 237), 15px 15px rgb(190, 190, 190);
+    
+}
+
+.todo-list > h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.todo-item{
+    margin-bottom: 2em;
+    border-bottom: 1px solid rgb(155, 156, 155);
+    padding-bottom: .2em;
+    font-size: 1.125rem;
+}
