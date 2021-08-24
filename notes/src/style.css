@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-size: 16px;
+    font-family:monospace;
+    background-color: #eee;
+}
+
+.note-container{
+    width: 600px;
+    margin: 1em auto;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px #000;
+    border-radius: 5px;
+}
+
+li{
+    line-height: 1.6;
+}
+button,
+input{
+    font-family:monospace;
+    font-size: 1rem;
+    padding: .3em 1em;
+}
+
+input{
+    width: 100%;
+    display: block;
+    margin-bottom: 1em;
+}
+
