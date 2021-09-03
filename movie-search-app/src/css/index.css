@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@media (min-width: 600px) {
+  .form-query {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 65% 30%;
+        grid-template-columns: 65% 30%;
+    gap: 5%;
+  }
+}
+
+@media (min-width: 768px) {
+  .app_title {
+    font-size: 3rem;
+  }
+  .display_movies {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .display_movies {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    gap: 1.5rem;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  background: #161748;
+  color: #eee;
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 80vw;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.app_title {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f95d9b;
+  margin-bottom: 1rem;
+}
+
+.search {
+  width: 100%;
+}
+
+.search_input, .btn {
+  width: 100%;
+  display: block;
+  margin-top: .5rem;
+  padding: .5rem;
+  border-radius: 15px;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+}
+
+.search_input {
+  border: 1px solid #eee;
+}
+
+.search_input:focus {
+  outline: none;
+  background: white;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #f95d9b;
+  color: #111;
+  border: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.btn:focus,
+.btn:hover {
+  background: #fdbfd8;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.movie-card {
+  background: #1a1b54;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 15px;
+  -webkit-box-shadow: 1px 1px 0 #000;
+          box-shadow: 1px 1px 0 #000;
+}
+
+.movie-card .movie-poster {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.movie-card .movie-overview {
+  line-height: 1.5;
+}
+
+.container_footer {
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.container_footer .social_icons {
+  font-size: 1.5rem;
+  padding: 0 .5rem;
+}
+
+.container_footer .social_icons_inline {
+  padding: 0 .5rem;
+}
+/*# sourceMappingURL=index.css.map */
