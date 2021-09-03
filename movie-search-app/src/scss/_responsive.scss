@@ -1,0 +1,25 @@
+@include media-xs{
+    .form-query{
+        display: grid;
+        grid-template-columns: 65% 30%;
+        gap: 5%;
+    }
+}
+
+@include media-md{
+   .app_title{
+       font-size: $fs-h2 + 1;
+   }
+   .display_movies{
+       display: grid;
+       grid-template-columns: auto auto;
+       gap: 1.5rem;
+   }
+}
+
+@include media-lg{
+    .display_movies{
+        grid-template-columns: auto auto auto;
+        gap: 1.5rem;
+    }
+}
