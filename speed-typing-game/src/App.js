@@ -13,7 +13,7 @@ function App() {
 
   const calcWordCount = (s) =>{
     let str = s.trim()
-    str = str.replace(/[ ]{2,}/gi," ") //reduce multiple spaces to a single space
+    str = str.replace(/[ ]{2,}/gi," ") 
     str = str.split(' ')
     return str.filter(w => w !== '').length
   }
