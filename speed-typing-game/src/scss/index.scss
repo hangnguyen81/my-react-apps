@@ -1,0 +1,68 @@
+@import 'config';
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: $bg-color;
+    color: $text-color;
+    font-family: $font-stack;
+    font-size: $fs-body;
+}
+
+.container{
+    width: 90vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: $fs-h1;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+textarea{
+    width: 100%;
+    height: 40vh;
+    font-size: $fs-h3;
+    font-family: $font-stack;
+    padding: 0.5rem;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+h4{
+    font-size: $fs-h4;
+    font-weight: 400;
+}
+
+button{
+    padding: .5rem 1rem;
+    cursor: pointer;
+    background-color: $text-color;
+    color: $bg-color;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: $fs-h4;
+}
+
+button:hover,
+button:focus{
+    background-color: darken($text-color,20%);
+}
+
+button:disabled{
+    cursor: not-allowed;
+}
