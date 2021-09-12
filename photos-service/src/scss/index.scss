@@ -1,0 +1,130 @@
+
+@import 'variables';
+
+body{
+    background-color: $light-color;
+    color: $body-text-color;
+    font-size: $fs-body;
+    font-family: $font-stack;
+}
+
+/* HEADER SECTION */
+.app__header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: $accent-color;
+    box-shadow: 0px 2px 10px -5px rgba(21,6,5,1);
+
+    .title{
+        font-size: $fs-h2;
+        text-shadow: 1px 1px 1px rgba(21,6,5,0.4);
+        letter-spacing: 1px;
+        color: $light-color;
+    }
+
+    a{
+        color: $light-color;
+        text-decoration: none;
+    }
+
+    .subtitle{
+        font-size: $fs-small;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: set-text-color($dark-color);
+        opacity: 0.9;
+    }
+}
+
+/* MAIN SECTION - DISPLAY PHOTOS*/
+.photos{
+    width: 80vw;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 1rem .5rem 1rem 1rem;
+    display: grid;
+    gap: .5rem;
+    grid-auto-rows: 150px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-flow: dense;
+}
+
+.image-container {
+    position: relative;
+}
+
+img.image-grid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.favorite {
+    color: set-text-color($dark-color);
+    font-size: 1.5rem;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+
+.cart {
+    color: set-text-color($dark-color);
+    font-size: 1.5rem;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+/* CART SECTION */
+.cart-page{
+    width: 80vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+/* FOOTER SECTION */
+.app__footer{
+    width: 100%;
+    font-size: 1rem;
+    position: fixed;
+    bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+
+    .social-icons{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    footer{
+        transform: rotate(90deg) translate(1rem, 1rem);
+        letter-spacing: 1px;
+    }
+
+    a{
+        color: $dark-color;
+        margin-top: 1rem ;
+        @include transition-ease;
+    }
+
+    a:hover,
+    a:focus{
+        color: $accent-color;
+    }
+}

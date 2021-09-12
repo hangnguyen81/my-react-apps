@@ -1,0 +1,40 @@
+//Font
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+$font-stack: 'Oswald', sans-serif;
+
+$fs-h1: 3rem;
+$fs-h2: 2.5rem;
+$fs-h3: 2rem;
+$fs-h4: 1.5rem;
+$fs-body: 1.125rem;
+$fs-small: .825rem;
+
+$fw-normal: 400;
+$fw-bold: 700;
+
+//Colors
+$dark-color: #150605;
+$light-color: #ffffff;
+$accent-color: #164a41 ;
+$body-text-color: #150605;
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin  transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@function set-text-color($color){
+    @if (lightness($color) > 40%){
+        @return $body-text-color;
+    }
+    @else{
+        @return $light-color;
+    }
+}
