@@ -26,8 +26,24 @@ $body-text-color: #150605;
     padding: 0;
 }
 
+@mixin background-img{
+    background:
+    linear-gradient(
+        to left,
+        rgba($dark-color, 0.5)       
+    ),
+    url('../img/front-page.jpg') center top ;
+    background-size: cover;
+}
+
 @mixin  transition-ease {
     transition: all 0.5s ease-in-out;
+}
+
+@mixin media-md{
+    @media screen and (min-width:768px){
+        @content;        
+    }
 }
 
 @function set-text-color($color){
