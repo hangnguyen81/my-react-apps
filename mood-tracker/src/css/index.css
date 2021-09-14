@@ -1,0 +1,44 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.counter {
+  margin: 0 auto;
+}
+
+.mood-tracker {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.mood-tracker h1, .mood-tracker p {
+  text-align: center;
+}
+
+.mood-tracker button {
+  padding: .5rem 1.5rem;
+  margin: 0 .5rem;
+  background-color: darkcyan;
+  color: whitesmoke;
+  border: 0;
+  cursor: pointer;
+}
+
+.mood-tracker textarea {
+  display: block;
+  margin: .5rem auto;
+  width: 300px;
+  height: 100px;
+}
+
+.mood-tracker .toolong {
+  background-color: lightcoral;
+  color: whitesmoke;
+}
+/*# sourceMappingURL=index.css.map */
