@@ -36,10 +36,11 @@ body{
         height: 100px;
     }
 
-    .toolong{
-        background-color: lightcoral;
-        color:whitesmoke;
+    textarea:focus{
+        outline: none;
     }
-
-
+    .toolong{
+        background-color:darksalmon;
+    }
 }
+
