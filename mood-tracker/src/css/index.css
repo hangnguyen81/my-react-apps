@@ -37,8 +37,11 @@ body {
   height: 100px;
 }
 
+.mood-tracker textarea:focus {
+  outline: none;
+}
+
 .mood-tracker .toolong {
-  background-color: lightcoral;
-  color: whitesmoke;
+  background-color: darksalmon;
 }
 /*# sourceMappingURL=index.css.map */
