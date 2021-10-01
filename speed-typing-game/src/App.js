@@ -11,7 +11,7 @@ function App() {
     startGame, 
     isButtonActive, 
     wordCount
-  }   = TypeGame(5)
+  }   = TypeGame(10)
 
   return (
     <div className="container">

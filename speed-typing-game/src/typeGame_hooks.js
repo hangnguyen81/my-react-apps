@@ -44,6 +44,7 @@ function TypeGame(initialTime = 5){
         else if (timeRemaining === 0){
         endGame()
         }      
+        //eslint-disable-next-line
     },[timeRemaining,isGameStart])
 
     return {textareaRef, userTyping, handleChange, isTextareaActive, timeRemaining, startGame, isButtonActive, wordCount}
