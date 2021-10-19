@@ -2,4 +2,4 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![UI(https://i.ibb.co/BghZxDR/birthday-reminder.png)
+![UI](https://i.ibb.co/BghZxDR/birthday-reminder.png)
