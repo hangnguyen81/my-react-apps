@@ -1,0 +1,96 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding:0;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: brown;
+}
+
+.birthday-board-container{
+  background-color: cornsilk;
+  border-radius: 5px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.6);
+  width: 400px;
+  margin: 3rem auto 1rem auto;
+  justify-content: center;
+  padding: .5rem 0;
+}
+
+.birthday-board-title{
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+}
+.birthday-board-subtitle{
+  text-align: center;
+  font-weight: bold;
+  color: brown;
+}
+
+.birthday-card{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 1rem 1rem 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.birthday-ava{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+
+
+.birthday-info{
+  justify-content: flex-start;
+  padding-left: 1rem;
+}
+
+.birthday-name{
+  margin: 0 0 .5rem 0;
+}
+
+p{
+  margin: 0;
+  padding-top: .2em;
+}
+
+.btn{
+  background-color: brown;
+  color: whitesmoke;
+  border: 0;
+  padding: .5rem 1rem;
+  margin: 1rem auto;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover,
+.btn:focus{
+  background-color: tomato;
+}
+
+.btn-center{
+ display: block;
+ margin-top: 2rem;
+}
+
+@media (max-width: 768px) { 
+  .birthday-board-container{
+    width: fit-content;
+  }   
+  .birthday-board-title{
+    font-size: 1.5rem;
+  }
+  .birthday-ava{
+    width: 100px;
+    height: 100px;
+  }
+}
+
